@@ -1,0 +1,91 @@
+<section id="booksread" class="light-bg">
+    <div class="container">
+    <div class="row">
+        <div class="col-lg-12 text-center">
+            <div class="section-title">
+                <h2>Books Read</h2>
+                <p>Following are the books that our members have read and loved so far.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <!-- start portfolio item -->
+        {% for book in site.books %}
+            {{ "Hello?" }}
+            <div class="col-md-4">
+                <div class="ot-portfolio-item">
+                    <figure class="effect-bubba">
+                        <img src="{{ book.img_src }}" alt="img02" class="img-responsive" />
+                        <figcaption>
+                            <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        {% endfor %}
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <!-- <div class="col-md-4">
+            <div class="ot-portfolio-item">
+                <figure class="effect-bubba">
+                    <img src="assets/images/demo/book-2.jpg" alt="img02" class="img-responsive" />
+                    <figcaption>
+                        <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> -->
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <!-- <div class="col-md-4">
+            <div class="ot-portfolio-item">
+                <figure class="effect-bubba">
+                    <img src="assets/images/demo/book-3.jpg" alt="img02" class="img-responsive" />
+                    <figcaption>
+                        <a href="#" data-toggle="modal" data-target="#Modal-3">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> -->
+        <!-- end portfolio item -->
+    </div>
+    <div class="row">
+        <!-- start portfolio item -->
+        <!-- <div class="col-md-4">
+            <div class="ot-portfolio-item">
+                <figure class="effect-bubba">
+                    <img src="assets/images/demo/book-4.jpg" alt="img02" class="img-responsive" />
+                    <figcaption>
+                        <a href="#" data-toggle="modal" data-target="#Modal-4">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> -->
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <!-- <div class="col-md-4">
+            <div class="ot-portfolio-item">
+                <figure class="effect-bubba">
+                    <img src="assets/images/demo/book-5.jpg" alt="img02" class="img-responsive" />
+                    <figcaption>
+                        <a href="#" data-toggle="modal" data-target="#Modal-5">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> -->
+        <!-- end portfolio item -->
+        <!-- start portfolio item -->
+        <!-- <div class="col-md-4">
+            <div class="ot-portfolio-item">
+                <figure class="effect-bubba">
+                    <img src="assets/images/demo/book-6.jpg" alt="img02" class="img-responsive" />
+                    <figcaption>
+                        <a href="#" data-toggle="modal" data-target="#Modal-2">View more</a>
+                    </figcaption>
+                </figure>
+            </div>
+        </div> -->
+        <!-- end portfolio item -->
+    </div>
+    </div><!-- end container -->
+</section>

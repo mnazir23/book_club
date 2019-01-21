@@ -15,7 +15,7 @@
                         <figure class="effect-bubba">
                             <img src="{{ book.img_src }}" alt="img02" class="img-responsive" />
                             <figcaption>
-                                <a href="#" data-toggle="modal" data-target="#Modal-1">View more</a>
+                                <a href="#" data-toggle="modal" data-target={{book.id}}>View more</a>
                             </figcaption>
                         </figure>
                     </div>
@@ -24,5 +24,23 @@
         </div>
     </div>
 </section>
-    
-    
+
+<!-- Data Model for Books -->
+<div class="modal fade" id={{page.id}} tabindex="-1" role="dialog" aria-labelledby="Modal-label-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="Modal-label-1">{{page.name}}</h4>
+            </div>
+            <div class="modal-body">
+                <img src={{page.img_src}} alt="img01" class="img-responsive" />
+                <!-- <div class="modal-works"><span>Branding</span><span>Web Design</span></div> -->
+                <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

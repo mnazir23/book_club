@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body id="page-top">
+        {% include navbar.html %}
+        {% include header.html %}
+ 
+        <section id="something" class="light-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="section-title">
+                            <h2>{{page.name}}</h2>
+                            <h4>{{page.author}}</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="ot-portfolio-item">
+                            <figure class="effect-bubba">
+                                <img src="{{ page.img_src }}" alt="img02" class="img-responsive" />
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="col-md-8 center-block" >
+                        <div class="row">
+                            <div class="col-md-6">
+                                <blockquote><h2>"So imaginative!"</h2>
+                                    <footer>Block quotes can contain more than just paragraphs…</footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-6">
+                                    <blockquote><h2>"So imaginative!"</h2>
+                                        <footer>Block quotes can contain more than just paragraphs…</footer>
+                                    </blockquote>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <blockquote><h2>So imaginative!</h2>
+                                    <footer>Block quotes can contain more than just paragraphs…</footer>
+                                </blockquote>
+                            </div>
+                            <div class="col-md-6">
+                                <blockquote><h2>"So imaginative!"</h2>
+                                    <footer>Block quotes can contain more than just paragraphs…</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="text-align: center">
+                    <a class="button" href="../index.html" type="button">Back to Home</a>
+                </div>
+            </div>
+        </section>
+
+        {% include jsfiles.html %}
+    </body>
+</html>
